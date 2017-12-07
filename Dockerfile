@@ -1,10 +1,10 @@
 FROM lsiobase/xenial
-MAINTAINER sparklyballs
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="sparklyballs"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -15,13 +15,12 @@ ARG BUILD_DEPENDENCIES="\
 	apt-transport-https \
 	lsb-release"
 
-# install build packages
 RUN \
+ echo "**** install build packages ****" && \
  apt-get update && \
  apt-get install -y \
 	${BUILD_DEPENDENCIES} && \
-
-# install runtime packages
+ echo "**** install runtime packages ****" && \
  curl -sL http://nsolid-deb.nodesource.com/nsolid_setup_2.x | bash - && \
  apt-get install --no-install-recommends -y \
 	bzip2 \
@@ -29,8 +28,7 @@ RUN \
 	libfontconfig \
 	nsolid-boron \
 	python-software-properties && \
-
-# install dillinger
+ echo "**** install dillinger ****" && \
  mkdir -p \
 	/app/dillinger && \
  curl -o \
@@ -41,12 +39,9 @@ RUN \
 	/app/dillinger --strip-components=1 && \
  cd /app/dillinger && \
  npm install && \
-
-# uninstall build packages
+ echo "**** cleanup ****" && \
  apt-get purge -y --auto-remove \
 	${BUILD_DEPENDENCIES} && \
-
-# cleanup
  npm cache clean && \
  rm -rf \
 	/tmp/* \
