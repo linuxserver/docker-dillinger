@@ -39,9 +39,12 @@ RUN \
 	--prefix /app/dillinger && \
  echo "**** clean up ****" && \
  rm -rf \
+	/root \
         /tmp/* \
         /var/lib/apt/lists/* \
-        /var/tmp/*
+        /var/tmp/* && \
+ mkdir -p \
+	/root
 
 # add local files
 COPY root/ /
