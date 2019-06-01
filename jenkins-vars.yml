@@ -2,7 +2,7 @@
 ---
 
 # jenkins variables
-project_name: docker-znc
+project_name: docker-dillinger
 external_type: na
 custom_version_command: git ls-remote --tags https://github.com/joemccann/dillinger.git | grep -v '{}' | tail -n 1 | awk -F / '{print $3}'
 release_type: stable
