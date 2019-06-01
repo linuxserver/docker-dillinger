@@ -1,5 +1,13 @@
 #!/usr/bin/with-contenv bash
 
+i=/app/dillinger/configs
+[[ -e "$i" && ! -L "$i" && -e /config/"$(basename "$i")" ]] && \
+	rm -Rf "$i" && \
+	ln -s /config/"$(basename "$i")" "$i"
+[[ -e "$i" && ! -L "$i" ]] && \
+	mv "$i" /config/"$(basename "$i")" && \
+	ln -s /config/"$(basename "$i")" "$i"
+
+# permissions
 chown -R abc:abc \
-	/app/dillinger \
 	/config
