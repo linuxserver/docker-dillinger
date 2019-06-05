@@ -112,7 +112,7 @@ In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as bel
 &nbsp;
 ## Application Setup
 
-Access the webui at http://<your-ip>:8080 , keep in mind that storage for this application is in your browser session not server side. Only plugin configurations will ever be stored server side. 
+Access the webui at http://your-ip:8080 , keep in mind that storage for this application is in your browser session not server side. Only plugin configurations will ever be stored server side. 
 
 
 
