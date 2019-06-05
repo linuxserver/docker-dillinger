@@ -2,5 +2,5 @@
 
 cd /app/dillinger || exit
 
-exec \
-	s6-setuidgid abc npm start
+NODE_ENV=production exec \
+	s6-setuidgid abc node app

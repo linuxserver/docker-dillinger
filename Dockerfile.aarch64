@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:bionic
+FROM lsiobase/ubuntu:arm64v8-bionic
 
 # set version label
 ARG BUILD_DATE
@@ -7,13 +7,17 @@ ARG DILLINGER_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thelamer"
 
+# environment settings
+ARG DEBIAN_FRONTEND="noninteractive"
+
 RUN \
- echo "**** install build env ****" && \
+ echo "**** install packages ****" && \
  apt-get update && \
  apt-get install -y \
-        git \
-        gnupg \
-	libfontconfig && \
+	git \
+	gnupg \
+	libfontconfig \
+	libicu60 && \
  curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
  echo 'deb https://deb.nodesource.com/node_12.x bionic main' \
 	> /etc/apt/sources.list.d/nodesource.list && \
@@ -33,16 +37,25 @@ RUN \
  tar -xzf \
  /tmp/dillinger.tar.gz -C \
 	/app/dillinger/ --strip-components=1 && \
+ echo "**** install pre-built phantonjs ****" && \
+ curl -o \
+ /tmp/phantom.tar.gz \
+	"https://lsio-ci.ams3.digitaloceanspaces.com/phantomjs/phantomjs-aarch64.tar.gz" && \
+ tar -xf \
+	/tmp/phantom.tar.gz -C / && \
  echo "**** install node modules ****" && \
+ sed -i \
+	'/phantomjs-prebuilt/d' \
+	/app/dillinger/package.json && \
  npm config set unsafe-perm true && \
  npm install --production \
 	--prefix /app/dillinger && \
  echo "**** clean up ****" && \
  rm -rf \
 	/root \
-        /tmp/* \
-        /var/lib/apt/lists/* \
-        /var/tmp/* && \
+	/tmp/* \
+	/var/lib/apt/lists/* \
+	/var/tmp/* && \
  mkdir -p \
 	/root
 
