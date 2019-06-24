@@ -21,7 +21,7 @@ file1:5.32-2ubuntu0.2
 findutils4.6.0+git+20170828-2
 fontconfig-config2.12.6-0ubuntu2
 fonts-dejavu-core2.37-1
-gcc-8-base8.3.0-6ubuntu1~18.04
+gcc-8-base8.3.0-6ubuntu1~18.04.1
 git1:2.17.1-1ubuntu0.4
 git-man1:2.17.1-1ubuntu0.4
 gnupg2.2.4-1ubuntu1.2
@@ -67,7 +67,7 @@ libfdisk12.31.1-0.4ubuntu3.3
 libffi63.2.1-8
 libfontconfig12.12.6-0ubuntu2
 libfreetype62.8.1-2ubuntu2
-libgcc11:8.3.0-6ubuntu1~18.04
+libgcc11:8.3.0-6ubuntu1~18.04.1
 libgcrypt201.8.1-4ubuntu1.1
 libgdbm51.14.1-6
 libgdbm-compat41.14.1-6
@@ -128,12 +128,12 @@ libsmartcols12.31.1-0.4ubuntu3.3
 libsqlite3-03.22.0-1
 libss21.44.1-1ubuntu1.1
 libssl1.0.01.0.2n-1ubuntu5.3
-libssl1.11.1.1-1ubuntu2.1~18.04.1
-libstdc++68.3.0-6ubuntu1~18.04
-libsystemd0237-3ubuntu10.21
+libssl1.11.1.1-1ubuntu2.1~18.04.2
+libstdc++68.3.0-6ubuntu1~18.04.1
+libsystemd0237-3ubuntu10.22
 libtasn1-64.13-2
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.21
+libudev1237-3ubuntu10.22
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.3
 libwind0-heimdal7.5.0+dfsg-1
@@ -157,7 +157,7 @@ ncurses-bin6.1-1ubuntu1.18.04
 netbase5.4
 nodejs12.4.0-1nodesource1
 openssh-client1:7.6p1-4ubuntu0.3
-openssl1.1.1-1ubuntu2.1~18.04.1
+openssl1.1.1-1ubuntu2.1~18.04.2
 passwd1:4.5-1ubuntu2
 patch2.7.6-2ubuntu1
 perl5.26.1-6ubuntu0.3
