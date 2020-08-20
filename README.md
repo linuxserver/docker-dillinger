@@ -64,6 +64,7 @@ Here are some example snippets to help you get started creating a container.
 ```
 docker create \
   --name=dillinger \
+  --cap-add=SYS_ADMIN
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Europe/London \
@@ -85,6 +86,8 @@ services:
   dillinger:
     image: linuxserver/dillinger
     container_name: dillinger
+    cap_add:
+      - SYS_ADMIN
     environment:
       - PUID=1000
       - PGID=1000
@@ -102,6 +105,7 @@ Container images are configured using parameters passed at runtime (such as thos
 
 | Parameter | Function |
 | :----: | --- |
+| `--cap-add=SYS_ADMIN` | Necessary permissions for Chromium's export of PDFs |
 | `-p 8080` | The port for the Dillinger web interface |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
@@ -216,3 +220,4 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 ## Versions
 
 * **31.05.19:** - Initial Release.
+* **20.08.20:** - Adding necessary packages and permissions for MD export to PDF functionality
