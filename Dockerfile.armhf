@@ -23,8 +23,9 @@ RUN \
 	> /etc/apt/sources.list.d/nodesource.list && \
  apt-get update && \
  apt-get install -y \
-	nodejs \
+        fonts-liberation \
         gconf-service \
+        libappindicator1 \
         libasound2 \
         libatk1.0-0 \
         libc6 \
@@ -39,6 +40,7 @@ RUN \
         libglib2.0-0 \
         libgtk-3-0 \
         libnspr4 \
+        libnss3 \
         libpango-1.0-0 \
         libpangocairo-1.0-0 \
         libstdc++6 \
@@ -55,9 +57,7 @@ RUN \
         libxrender1 \
         libxss1 \
         libxtst6 \
-        fonts-liberation \
-        libappindicator1 \
-        libnss3 && \
+        nodejs && \
  echo "**** install dillinger ****" && \
  mkdir -p \
 	/app/dillinger && \
