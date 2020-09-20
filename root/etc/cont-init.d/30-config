@@ -11,3 +11,6 @@ i=/app/dillinger/configs
 # permissions
 chown -R abc:abc \
 	/config
+
+chown -R abc:abc \
+	/app/dillinger/public/
