@@ -219,9 +219,9 @@ libwayland-client01.16.0-1ubuntu1.1~18.04.3
 libwayland-cursor01.16.0-1ubuntu1.1~18.04.3
 libwayland-egl11.16.0-1ubuntu1.1~18.04.3
 libwind0-heimdal7.5.0+dfsg-1
-libx11-62:1.6.4-3ubuntu0.3
-libx11-data2:1.6.4-3ubuntu0.3
-libx11-xcb12:1.6.4-3ubuntu0.3
+libx11-62:1.6.4-3ubuntu0.4
+libx11-data2:1.6.4-3ubuntu0.4
+libx11-xcb12:1.6.4-3ubuntu0.4
 libxau61:1.0.8-1ubuntu1
 libxcb11.13-2~ubuntu18.04
 libxcb-render01.13-2~ubuntu18.04
