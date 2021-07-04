@@ -135,7 +135,7 @@ libharfbuzz0b1.7.2-1ubuntu1
 libhcrypto4-heimdal7.5.0+dfsg-1
 libheimbase1-heimdal7.5.0+dfsg-1
 libheimntlm0-heimdal7.5.0+dfsg-1
-libhogweed43.4-1ubuntu0.1
+libhogweed43.4.1-0ubuntu0.18.04.1
 libhx509-5-heimdal7.5.0+dfsg-1
 libicu6060.2-3ubuntu3.1
 libidn2-02.0.4-1.1ubuntu0.2
@@ -161,7 +161,7 @@ libmagic-mgc1:5.32-2ubuntu0.4
 libmount12.31.1-0.4ubuntu3.7
 libncurses56.1-1ubuntu1.18.04
 libncursesw56.1-1ubuntu1.18.04
-libnettle63.4-1ubuntu0.1
+libnettle63.4.1-0ubuntu0.18.04.1
 libnghttp2-141.30.0-1ubuntu1
 libnpth01.5-3
 libnspr42:4.18-1ubuntu1
@@ -206,13 +206,13 @@ libss21.44.1-1ubuntu1.3
 libssl1.0.01.0.2n-1ubuntu5.6
 libssl1.11.1.1-1ubuntu2.1~18.04.9
 libstdc++68.4.0-1ubuntu1~18.04
-libsystemd0237-3ubuntu10.47
+libsystemd0237-3ubuntu10.48
 libtasn1-64.13-2
 libthai00.1.27-2
 libthai-data0.1.27-2
 libtiff54.0.9-5ubuntu0.4
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.47
+libudev1237-3ubuntu10.48
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.7
 libwayland-client01.16.0-1ubuntu1.1~18.04.3
@@ -252,7 +252,7 @@ multiarch-support2.27-3ubuntu1.4
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
 netbase5.4
-nodejs12.22.1-1nodesource1
+nodejs12.22.2-1nodesource1
 openssh-client1:7.6p1-4ubuntu0.3
 openssl1.1.1-1ubuntu2.1~18.04.9
 passwd1:4.5-1ubuntu2
