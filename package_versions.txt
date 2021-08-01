@@ -10,7 +10,7 @@ bsdutils1:2.31.1-0.4ubuntu3.7
 bzip21.0.6-8.1ubuntu0.2
 ca-certificates20210119~18.04.1
 coreutils8.28-1ubuntu1
-curl7.58.0-2ubuntu3.13
+curl7.58.0-2ubuntu3.14
 dash0.5.8-2.10
 dbus1.12.2-1ubuntu1.2
 dconf-gsettings-backend0.26.0-2ubuntu3
@@ -89,7 +89,7 @@ libcom-err21.44.1-1ubuntu1.3
 libcroco30.6.12-2
 libcups22.2.7-1ubuntu2.8
 libcurl3-gnutls7.58.0-2ubuntu3.14
-libcurl47.58.0-2ubuntu3.13
+libcurl47.58.0-2ubuntu3.14
 libdatrie10.2.10-7
 libdb5.35.3.28-13.1ubuntu1.1
 libdbus-1-31.12.2-1ubuntu1.2
@@ -206,13 +206,13 @@ libss21.44.1-1ubuntu1.3
 libssl1.0.01.0.2n-1ubuntu5.6
 libssl1.11.1.1-1ubuntu2.1~18.04.9
 libstdc++68.4.0-1ubuntu1~18.04
-libsystemd0237-3ubuntu10.48
+libsystemd0237-3ubuntu10.49
 libtasn1-64.13-2
 libthai00.1.27-2
 libthai-data0.1.27-2
 libtiff54.0.9-5ubuntu0.4
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.48
+libudev1237-3ubuntu10.49
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.7
 libwayland-client01.16.0-1ubuntu1.1~18.04.3
@@ -252,7 +252,7 @@ multiarch-support2.27-3ubuntu1.4
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
 netbase5.4
-nodejs12.22.2-1nodesource1
+nodejs12.22.4-1nodesource1
 openssh-client1:7.6p1-4ubuntu0.3
 openssl1.1.1-1ubuntu2.1~18.04.9
 passwd1:4.5-1ubuntu2
