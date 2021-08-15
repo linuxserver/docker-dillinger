@@ -252,8 +252,8 @@ multiarch-support2.27-3ubuntu1.4
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
 netbase5.4
-nodejs12.22.4-1nodesource1
-openssh-client1:7.6p1-4ubuntu0.3
+nodejs12.22.5-1nodesource1
+openssh-client1:7.6p1-4ubuntu0.5
 openssl1.1.1-1ubuntu2.1~18.04.9
 passwd1:4.5-1ubuntu2
 patch2.7.6-2ubuntu1.1
