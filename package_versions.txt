@@ -101,7 +101,7 @@ libdebconfclient00.213ubuntu1
 libedit23.1-20170329-1
 libepoxy01.4.3-1
 liberror-perl0.17025-1
-libexpat12.2.5-3ubuntu0.4
+libexpat12.2.5-3ubuntu0.7
 libext2fs21.44.1-1ubuntu1.3
 libfdisk12.31.1-0.4ubuntu3.7
 libffi63.2.1-8
@@ -242,7 +242,7 @@ libxrender11:0.9.10-1
 libxss11:1.2.2-1
 libxtst62:1.2.3-1
 libzstd11.3.3+dfsg-2ubuntu1.2
-locales2.27-3ubuntu1.4
+locales2.27-3ubuntu1.5
 login1:4.5-1ubuntu2.2
 lsb-base9.20170808ubuntu1
 mawk1.3.3-17ubuntu3
