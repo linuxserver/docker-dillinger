@@ -24,7 +24,7 @@ pipeline {
     DOCKERHUB_IMAGE = 'linuxserver/dillinger'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/dillinger'
     PR_DOCKERHUB_IMAGE = 'lspipepr/dillinger'
-    DIST_IMAGE = 'ubuntu'
+    DIST_IMAGE = 'alpine'
     MULTIARCH='true'
     CI='true'
     CI_WEB='true'

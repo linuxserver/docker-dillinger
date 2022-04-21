@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm32v7-bionic
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.15
 
 # set version label
 ARG BUILD_DATE
@@ -7,95 +7,5 @@ ARG DILLINGER_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thelamer"
 
-# environment settings
-ARG DEBIAN_FRONTEND="noninteractive"
-
-RUN \
- echo "**** install packages ****" && \
- apt-get update && \
- apt-get install -y \
-	git \
-	gnupg \
-	libfontconfig \
-	libicu60 && \
- curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - && \
- echo 'deb https://deb.nodesource.com/node_12.x bionic main' \
-	> /etc/apt/sources.list.d/nodesource.list && \
- apt-get update && \
- apt-get install -y \
-        fonts-liberation \
-        gconf-service \
-        libappindicator1 \
-        libasound2 \
-        libatk1.0-0 \
-        libc6 \
-        libcairo2 \
-        libcups2 \
-        libdbus-1-3 \
-        libexpat1 \
-        libfontconfig1 \
-        libgcc1 \
-        libgconf-2-4 \
-        libgdk-pixbuf2.0-0 \
-        libglib2.0-0 \
-        libgtk-3-0 \
-        libnspr4 \
-        libnss3 \
-        libpango-1.0-0 \
-        libpangocairo-1.0-0 \
-        libstdc++6 \
-        libx11-6 \
-        libx11-xcb1 \
-        libxcb1 \
-        libxcomposite1 \
-        libxcursor1 \
-        libxdamage1 \
-        libxext6 \
-        libxfixes3 \
-        libxi6 \
-        libxrandr2 \
-        libxrender1 \
-        libxss1 \
-        libxtst6 \
-        nodejs && \
- echo "**** install dillinger ****" && \
- mkdir -p \
-	/app/dillinger && \
- if [ -z ${DILLINGER_VERSION+x} ]; then \
-	DILLINGER_VERSION=$(git ls-remote --tags https://github.com/joemccann/dillinger.git \
-	| grep -v '{}' | tail -n 1 | awk -F / '{print $3}'); \
- fi && \
- curl -o \
- /tmp/dillinger.tar.gz -L \
-	"https://github.com/joemccann/dillinger/archive/${DILLINGER_VERSION}.tar.gz" && \
- tar -xzf \
- /tmp/dillinger.tar.gz -C \
-	/app/dillinger/ --strip-components=1 && \
- echo "**** install pre-built phantonjs ****" && \
- curl -o \
- /tmp/phantom.tar.gz \
-	"https://lsio-ci.ams3.digitaloceanspaces.com/phantomjs/phantomjs-armhf.tar.gz" && \
- tar -xf \
-        /tmp/phantom.tar.gz -C / && \
- echo "**** install node modules ****" && \
- sed -i \
-	'/phantomjs-prebuilt/d' \
-	/app/dillinger/package.json && \
- npm config set unsafe-perm true && \
- npm install --production \
-	--prefix /app/dillinger && \
- echo "**** clean up ****" && \
- rm -rf \
-	/root \
-	/tmp/* \
-	/var/lib/apt/lists/* \
-	/var/tmp/* && \
- mkdir -p \
-	/root
-
 # add local files
 COPY root/ /
-
-# ports and volumes
-EXPOSE 8080
-VOLUME /config

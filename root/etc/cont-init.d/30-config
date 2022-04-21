@@ -1,16 +1,20 @@
 #!/usr/bin/with-contenv bash
 
+if [[ "$(uname -m)" == "armv7l" ]]; then
+    exit 0
+fi
+
 i=/app/dillinger/configs
 [[ -e "$i" && ! -L "$i" && -e /config/"$(basename "$i")" ]] && \
-	rm -Rf "$i" && \
-	ln -s /config/"$(basename "$i")" "$i"
+    rm -Rf "$i" && \
+    ln -s /config/"$(basename "$i")" "$i"
 [[ -e "$i" && ! -L "$i" ]] && \
-	mv "$i" /config/"$(basename "$i")" && \
-	ln -s /config/"$(basename "$i")" "$i"
+    mv "$i" /config/"$(basename "$i")" && \
+    ln -s /config/"$(basename "$i")" "$i"
 
 # permissions
 chown -R abc:abc \
-	/config
+    /config
 
 chown -R abc:abc \
-	/app/dillinger/public/
+    /app/dillinger/public/
