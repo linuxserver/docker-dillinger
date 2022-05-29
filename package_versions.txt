@@ -13,11 +13,11 @@ busybox-1.34.1-r5
 c-ares-1.18.1-r0
 ca-certificates-20211220-r0
 ca-certificates-bundle-20211220-r0
-cairo-1.16.0-r4
-cairo-gobject-1.16.0-r4
+cairo-1.16.0-r5
+cairo-gobject-1.16.0-r5
 chromium-99.0.4844.84-r0
 coreutils-9.0-r2
-cups-libs-2.3.3-r5
+cups-libs-2.3.3-r6
 curl-7.80.0-r1
 dbus-libs-1.12.20-r4
 encodings-1.0.5-r0
