@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:3.17
 
 # set version label
 ARG BUILD_DATE
@@ -17,10 +19,7 @@ RUN \
     nss \
     freetype \
     harfbuzz \
-    ca-certificates \
     ttf-freefont \
-    curl \
-    jq \
     npm && \
   echo "**** install dillinger ****" && \
   mkdir -p \
@@ -36,8 +35,7 @@ RUN \
   /tmp/dillinger.tar.gz -C \
     /app/dillinger/ --strip-components=1 && \
   echo "**** install node modules ****" && \
-  npm config set unsafe-perm true && \
-  npm install --production \
+  npm install --omit=dev \
     --prefix /app/dillinger && \
   echo "**** clean up ****" && \
   npm cache clean --force && \
