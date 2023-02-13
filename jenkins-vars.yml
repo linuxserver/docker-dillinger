@@ -8,6 +8,7 @@ custom_version_command: git ls-remote --tags https://github.com/joemccann/dillin
 release_type: stable
 release_tag: latest
 ls_branch: master
+build_armhf: false
 repo_vars:
   - BUILD_VERSION_ARG = 'DILLINGER_VERSION'
   - LS_USER = 'linuxserver'
