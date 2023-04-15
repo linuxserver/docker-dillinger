@@ -695,7 +695,7 @@ libxft                                     2.3.7-r0                     apk
 libxi                                      1.8-r0                       apk     
 libxinerama                                1.1.5-r0                     apk     
 libxkbcommon                               1.4.1-r0                     apk     
-libxml2                                    2.10.3-r1                    apk     
+libxml2                                    2.10.4-r0                    apk     
 libxmu                                     1.1.4-r0                     apk     
 libxrandr                                  1.5.3-r0                     apk     
 libxrender                                 0.9.11-r0                    apk     
