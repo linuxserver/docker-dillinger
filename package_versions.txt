@@ -199,7 +199,7 @@ cheerio                                    0.22.0                       npm
 chokidar                                   1.7.0                        npm     
 chokidar                                   3.3.1                        npm     
 chownr                                     2.0.0                        npm     
-chromium                                   112.0.5615.49-r0             apk     
+chromium                                   112.0.5615.165-r0            apk     
 ci-info                                    3.6.1                        npm     
 cidr-regex                                 3.1.1                        npm     
 cjson                                      1.7.15-r3                    apk     
@@ -264,7 +264,7 @@ cssesc                                     3.0.0                        npm
 csswring                                   5.0.0                        npm     
 ctype                                      0.5.3                        npm     
 cups-libs                                  2.4.2-r1                     apk     
-curl                                       7.88.1-r1                    apk     
+curl                                       8.0.1-r0                     apk     
 dashdash                                   1.14.1                       npm     
 date-fns                                   1.30.1                       npm     
 dateformat                                 2.2.0                        npm     
@@ -626,7 +626,7 @@ libbsd                                     0.11.7-r0                    apk
 libbz2                                     1.0.8-r4                     apk     
 libc-utils                                 0.7.2-r3                     apk     
 libcrypto3                                 3.0.8-r3                     apk     
-libcurl                                    7.88.1-r1                    apk     
+libcurl                                    8.0.1-r0                     apk     
 libdav1d                                   1.0.0-r2                     apk     
 libdrm                                     2.4.114-r0                   apk     
 libelf                                     0.187-r2                     apk     
