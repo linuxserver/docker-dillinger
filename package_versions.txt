@@ -682,7 +682,7 @@ libvpx                                     1.12.0-r1                    apk
 libwebp                                    1.2.4-r2                     apk     
 libwoff2common                             1.0.2-r2                     apk     
 libwoff2enc                                1.0.2-r2                     apk     
-libx11                                     1.8.4-r0                     apk     
+libx11                                     1.8.4-r1                     apk     
 libxau                                     1.0.10-r0                    apk     
 libxcb                                     1.15-r0                      apk     
 libxcomposite                              0.4.5-r1                     apk     
