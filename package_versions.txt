@@ -1167,7 +1167,7 @@ temp                                       0.8.4                        npm
 text-table                                 0.2.0                        npm     
 through                                    2.3.8                        npm     
 through2                                   2.0.5                        npm     
-tiff                                       4.4.0-r3                     apk     
+tiff                                       4.4.0-r4                     apk     
 time-stamp                                 1.1.0                        npm     
 tiny-relative-date                         1.3.0                        npm     
 tmp                                        0.0.33                       npm     
