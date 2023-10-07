@@ -48,7 +48,7 @@ align-text                                 0.1.4                        npm
 alpine-baselayout                          3.4.3-r1                     apk   
 alpine-baselayout-data                     3.4.3-r1                     apk   
 alpine-keys                                2.4-r1                       apk   
-alpine-release                             3.18.3-r0                    apk   
+alpine-release                             3.18.4-r0                    apk   
 alsa-lib                                   1.2.9-r1                     apk   
 alter                                      0.2.0                        npm   
 amdefine                                   1.0.1                        npm   
@@ -797,7 +797,7 @@ markdown-it-toc                            1.1.0                        npm
 marked                                     0.8.0                        npm   
 match-at                                   0.1.1                        npm   
 math-random                                1.0.4                        npm   
-mbedtls                                    2.28.4-r0                    apk   
+mbedtls                                    2.28.5-r0                    apk   
 md-to-pdf                                  3.0.0                        npm   
 mdurl                                      1.0.1                        npm   
 media-typer                                0.3.0                        npm   
