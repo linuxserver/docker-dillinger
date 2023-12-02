@@ -205,7 +205,7 @@ cheerio                                    0.22.0                       npm
 chokidar                                   1.7.0                        npm   
 chokidar                                   3.3.1                        npm   
 chownr                                     2.0.0                        npm   
-chromium                                   117.0.5938.62-r0             apk   
+chromium                                   119.0.6045.159-r0            apk   
 ci-info                                    3.8.0                        npm   
 cidr-regex                                 3.1.1                        npm   
 cjson                                      1.7.15-r4                    apk   
