@@ -48,7 +48,7 @@ align-text                                 0.1.4                        npm
 alpine-baselayout                          3.4.3-r1                     apk   
 alpine-baselayout-data                     3.4.3-r1                     apk   
 alpine-keys                                2.4-r1                       apk   
-alpine-release                             3.18.4-r0                    apk   
+alpine-release                             3.18.5-r0                    apk   
 alsa-lib                                   1.2.9-r1                     apk   
 alter                                      0.2.0                        npm   
 amdefine                                   1.0.1                        npm   
@@ -271,7 +271,7 @@ cssesc                                     3.0.0                        npm
 csswring                                   5.0.0                        npm   
 ctype                                      0.5.3                        npm   
 cups-libs                                  2.4.7-r0                     apk   
-curl                                       8.4.0-r0                     apk   
+curl                                       8.5.0-r0                     apk   
 dashdash                                   1.14.1                       npm   
 date-fns                                   1.30.1                       npm   
 dateformat                                 2.2.0                        npm   
@@ -643,7 +643,7 @@ libbsd                                     0.11.7-r1                    apk
 libbz2                                     1.0.8-r5                     apk   
 libc-utils                                 0.7.2-r5                     apk   
 libcrypto3                                 3.1.4-r1                     apk   
-libcurl                                    8.4.0-r0                     apk   
+libcurl                                    8.5.0-r0                     apk   
 libdav1d                                   1.2.1-r0                     apk   
 libdrm                                     2.4.115-r4                   apk   
 libelf                                     0.189-r2                     apk   
