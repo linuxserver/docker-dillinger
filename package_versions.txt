@@ -587,7 +587,7 @@ isobject                                   3.0.1                        npm
 isomorphic-fetch                           2.2.1                        npm   
 isstream                                   0.1.2                        npm   
 jackspeak                                  2.2.0                        npm   
-jq                                         1.6-r3                       apk   
+jq                                         1.6-r4                       apk   
 jquery                                     3.4.1                        npm   
 jquery-ui-bundle                           1.12.1                       npm   
 js-base64                                  2.5.1                        npm   
