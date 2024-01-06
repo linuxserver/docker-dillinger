@@ -1223,7 +1223,7 @@ type-fest                                  0.3.1                        npm
 type-is                                    1.6.18                       npm   
 typedarray                                 0.0.6                        npm   
 typeof-article                             0.1.1                        npm   
-tzdata                                     2023c-r1                     apk   
+tzdata                                     2023d-r0                     apk   
 uc.micro                                   1.0.6                        npm   
 uglify-js                                  2.6.2                        npm   
 uglify-to-browserify                       1.0.2                        npm   
