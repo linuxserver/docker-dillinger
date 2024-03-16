@@ -649,7 +649,7 @@ libdrm                                     2.4.115-r4                   apk
 libelf                                     0.189-r2                     apk                     
 libepoxy                                   1.5.10-r1                    apk                     
 libevent                                   2.1.12-r6                    apk                     
-libexpat                                   2.6.0-r0                     apk                     
+libexpat                                   2.6.2-r0                     apk                     
 libffi                                     3.4.4-r2                     apk                     
 libfontenc                                 1.1.7-r2                     apk                     
 libgcc                                     12.2.1_git20220924-r10       apk                     
