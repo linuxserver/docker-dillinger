@@ -8,6 +8,8 @@ project_blurb: |
   [{{ project_name|capitalize }}]({{ project_url }}) is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 
+project_deprecation_status: true
+
 # supported architectures
 available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
@@ -45,6 +47,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "20.03.24:", desc: "Deprecate image." }
   - { date: "12.07.23:", desc: "Rebase to Alpine 3.18." }
   - { date: "13.02.23:", desc: "Rebase to Alpine 3.17, migrate to s6v3." }
   - { date: "19.04.22:", desc: "Rebase to Alpine." }
